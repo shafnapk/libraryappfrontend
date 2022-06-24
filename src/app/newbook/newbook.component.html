@@ -1,0 +1,40 @@
+
+<div class="card">
+    <form (ngSubmit)="newbook()">
+        <div class="card-header">
+            {{title}}
+        </div>
+        <div class="card-body">
+        <div class="table-responsive">
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td>Book Id</td>
+                        <td><input type="number" name="b_id" [(ngModel)]='bookItem.bookid'></td>
+                    </tr>
+                    <tr>
+                        <td>Title</td>
+                        <td><input type="text" name="b_title" [(ngModel)]='bookItem.booktitle'></td>
+                    </tr>
+                    <tr>
+                        <td>Author</td>
+                        <td><input type="text" name="b_author" [(ngModel)]='bookItem.bookauthor'></td>
+                    </tr>
+                    <tr>
+                        <td>Publisher</td>
+                        <td><input type="text" name="b_pub" [(ngModel)]='bookItem.bookpublisher'></td>
+                    </tr>
+                    <tr>
+                        <td>Genre</td>
+                        <td><input type="text" name="b_genre" [(ngModel)]='bookItem.bookgenre'></td>
+                    </tr>
+                    <tr>
+                       <td><input type="submit" value="Submit"></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+    </form>
+</div>

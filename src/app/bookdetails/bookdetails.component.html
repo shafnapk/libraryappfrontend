@@ -1,0 +1,29 @@
+
+<div class="card-header">
+<h2>BOOK LIST</h2>
+<table class="styled-table">
+    <thead>
+        <tr>
+            <th style="width: 180px;">Title</th>
+            <th style="width: 180px;">Author</th>
+            <th style="width: 180px;">Publisher</th>
+            <th style="width: 180px;">Genre</th>
+            
+            
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor='let i of booklist'>
+        
+            
+            <td>{{i.booktitle}}</td>
+            <td>{{i.bookauthor}}</td>
+            <td>{{i.bookpublisher}}</td>
+           <td>{{i.bookgenre}}</td>
+          
+        
+      </tr>
+    </tbody>
+  
+</table>
+</div>
